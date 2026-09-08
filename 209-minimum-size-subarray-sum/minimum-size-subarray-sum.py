@@ -1,8 +1,8 @@
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
-        summ=0
         j=0
-        result=float("inf")
+        summ=0
+        result=float("inf")  #max number
         for i in range(len(nums)):
             summ=summ+nums[i]
             while summ>=target:
@@ -13,6 +13,4 @@ class Solution:
         if result==float("inf"):
             return 0
         else:
-            return result    
-
-
+            return result          
