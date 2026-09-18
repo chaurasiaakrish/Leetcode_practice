@@ -9,8 +9,8 @@ https://leetcode.com/u/akrishchaurasia
 
 ## 🐍 Language Used
 
-Python
-MS SQL SERVER DATABASE
+1. Python
+2. MS SQL SERVER DATABASE
 
 ## 🎯 Goals
 
