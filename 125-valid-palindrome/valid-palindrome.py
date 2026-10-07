@@ -14,5 +14,4 @@ class Solution:
                 k-=1
             else:
                 return False     
-        return True           
-        
+        return True
