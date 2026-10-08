@@ -10,7 +10,7 @@ class Solution:
                 if not stack:
                     return False
 
-                if (i == "]" and stack[-1] == "[") or \
+                elif (i == "]" and stack[-1] == "[") or \
                    (i == ")" and stack[-1] == "(") or \
                    (i == "}" and stack[-1] == "{"):
                     stack.pop()
