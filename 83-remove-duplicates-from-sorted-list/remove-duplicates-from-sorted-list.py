@@ -6,10 +6,9 @@
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         slow=head
-        while slow is not None and slow.next is not None:
+        while slow is not None and slow.next is not None :
             if slow.val==slow.next.val:
                 slow.next=slow.next.next
             else:
                 slow=slow.next
-        return head            
-
+        return head          
