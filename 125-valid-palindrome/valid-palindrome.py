@@ -1,17 +1,19 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        t=""
-        for i in s.lower():
+        s=s.lower()
+        string=[]
+        for i in s:
             if i.isalnum():
-                t=t+i
-            else:
-                continue 
-        j=0
-        k=len(t)-1
-        while j<k:
-            if t[j]==t[k]:
-                j+=1
-                k-=1
-            else:
-                return False     
-        return True
+                string.append(i)
+        string="".join(string)        
+        if len(string)==0:
+            return True
+        else:
+            j=0;k=len(string)-1 
+            while j<=k:
+                if string[j]==string[k]:
+                    j+=1
+                    k-=1
+                else:
+                    return False
+        return True            
